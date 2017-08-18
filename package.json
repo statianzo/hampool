@@ -1,17 +1,21 @@
 {
   "name": "hampool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NCVEC amateur radio question pools",
   "main": "index.js",
   "homepage": "http://www.ncvec.org/page.php?id=338",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/statianzo/hampool.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/statianzo/hampool.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ham", "radio", "pool"],
+  "keywords": [
+    "ham",
+    "radio",
+    "pool"
+  ],
   "author": "statianzo",
   "license": "Unlicense"
 }
