@@ -25,11 +25,9 @@ const parseQuestionText = text => {
 const transformFile = body =>
   body.split('~~').slice(0, -1).map(parseQuestionText).filter(Boolean);
 
-const tasks = ['tech', 'general', 'extra'].map(async type => {
+['tech', 'general', 'extra'].forEach(async type => {
   const body = await readFile(`./${type}.txt`, {encoding: 'utf8'});
   const questions = transformFile(body);
-  await writeFile(`./${type}.json`);
+  await writeFile(`./${type}.json`, JSON.stringify({questions}, null, 2));
   return questions;
 });
-
-Promise.all(tasks).then(() => console.log('done'));
