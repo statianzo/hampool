@@ -50,3 +50,11 @@ The amateur radio question pools made [available by
 NCVEC](http://www.ncvec.org/page.php?id=338) aren't available in an easily
 consumable format. This project converted the Word docs to UTF-8 text and then
 parsed that into json.
+
+## Hosted
+
+Need access to this as an API? Thanks to [unpkg](https://unpkg.com), the contents of the NPM package are available at the following endpoints:
+
+- https://unpkg.com/hampool/tech
+- https://unpkg.com/hampool/general
+- https://unpkg.com/hampool/extra
